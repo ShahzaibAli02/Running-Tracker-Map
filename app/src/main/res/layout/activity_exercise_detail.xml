@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ExerciseDetail">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20sp"
+        android:background="@drawable/tablecell"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textColor="#595858"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance Traveled"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+        <TextView
+            android:id="@+id/txtDistanceTraveled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 KM"
+            android:textColor="#595858"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+    </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/tablecell"
+            >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="how far have I run so far today?"
+            android:backgroundTint="#727372"
+            />
+        <TextView
+            android:id="@+id/txtHFIRT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 KM"
+            android:textColor="#595858"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/tablecell"
+            android:layout_marginTop="20sp"
+            >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="how far have I run this month?"
+            android:backgroundTint="#727372"
+            />
+        <TextView
+            android:id="@+id/txtHFIRTM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 KM"
+            android:textColor="#595858"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/tablecell"
+            android:layout_marginTop="20sp"
+            >
+
+
+        <Button
+            android:id="@+id/btnStartPause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="have I run faster than my best time today?"
+            android:backgroundTint="#727372"
+            />
+
+        <TextView
+            android:id="@+id/txtbestTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Your Best Time Is : 00:00:00"
+            android:textColor="#595858"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-smallcaps"
+            />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/tablecell"
+            android:layout_marginTop="20sp"
+            >
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How Was Exercise ?"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                />
+
+
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:id="@+id/radioGrop"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioGood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good"
+
+                    />
+                <RadioButton
+                    android:id="@+id/radioNormal"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    />
+                <RadioButton
+                    android:id="@+id/radioBad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bad"
+                    android:layout_marginStart="10dp"
+                    />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/editTextUserNote"
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:gravity="start"
+            android:hint="Anything About The Exercise ?"
+            android:background="@drawable/customedittext"
+
+            />
+
+
+        <Button
+            android:onClick="onClickSave"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:backgroundTint="#558B2F"
+            android:layout_marginBottom="10dp"
+            />
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
